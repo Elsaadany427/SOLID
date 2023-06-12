@@ -13,7 +13,7 @@ export function Good() {
       <Filter filterRate={filterRate as number} handleRate={handleRate} />
       <div className="h-full flex flex-wrap justify-center">
         {filterProducts(products, filterRate).map((product: any) => (
-          <Product product={product} />
+          <Product product={product} key={product.id}/>
         ))}
       </div>
     </div>
