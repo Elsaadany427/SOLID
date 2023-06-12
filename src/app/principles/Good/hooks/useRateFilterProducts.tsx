@@ -7,5 +7,5 @@ export function useRateFilterProducts(): any {
     const handleRate = (rate: number) => {
         setFilterRate(rate);
     }
-    return {filterRate, setFilterRate};
+    return {filterRate, handleRate};
 }
