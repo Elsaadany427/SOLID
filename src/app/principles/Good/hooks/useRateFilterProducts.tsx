@@ -6,6 +6,7 @@ export function useRateFilterProducts(): any {
 
     const handleRate = (rate: number) => {
         setFilterRate(rate);
+        console.log("F", filterRate)
     }
     return {filterRate, handleRate};
 }
